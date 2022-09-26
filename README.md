@@ -13,10 +13,14 @@ ncu --print-summary per-kernel  --section SpeedOfLight python xx.py repeat_count
 | trunc	|  pytorch 1.9.0 / 1.6.0| pytorch 1.9.0 / 1.6.0 |
 
 ## 参考链接
-### poly_nms： https://github.com/dingjiansw101/AerialDetection/blob/master/mmdet/ops/poly_nms/src/poly_nms_kernel.cu
+### poly_nms
+1. 参考链接
+https://github.com/dingjiansw101/AerialDetection/blob/master/mmdet/ops/poly_nms/src/poly_nms_kernel.cu
+2. 应用网络
+FasterRCNN trans obb
 
 ###  generate_proposals_v2
-1. 链接
+1. 参考链接
 - Mask R-CNN的工作原理:https://baijiahao.baidu.com/s?id=1595621180643410921&wfr=spider&for=pc
 - v2 头文件 : https://github.com/PaddlePaddle/Paddle/blob/develop/paddle/phi/kernels/generate_proposals_v2_kernel.h
 - v2 gpu kernel: https://github.com/PaddlePaddle/Paddle/blob/develop/paddle/phi/kernels/gpu/generate_proposals_v2_kernel.cu
@@ -26,7 +30,8 @@ ncu --print-summary per-kernel  --section SpeedOfLight python xx.py repeat_count
 - v2 接口注册与说明 : https://github.com/PaddlePaddle/Paddle/blob/develop/paddle/fluid/operators/detection/generate_proposals_v2_op.cc
 - v1 cpu kernel: https://github.com/PaddlePaddle/Paddle/blob/develop/paddle/fluid/operators/detection/generate_proposals_op.cc
 - v1 cuda kernel: https://github.com/PaddlePaddle/Paddle/blob/develop/paddle/fluid/operators/detection/generate_proposals_op.cu
-
+2. 应用网络
+maskrcnn
 
 ### trunc
 1. 框架版本+源码链接
